@@ -31,7 +31,6 @@ char *ChargerChaine(int N) {
     char *str = (char *)malloc(N * sizeof(char));
     printf("Veuillez saisir la chaîne : ");
     fgets(str, N, stdin);
-    // إزالة الـ '\n' إذا كانت موجودة في السلسلة
     size_t len = strlen(str);
     if (len > 0 && str[len - 1] == '\n') {
         str[len - 1] = '\0';
